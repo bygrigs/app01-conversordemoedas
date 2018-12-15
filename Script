@@ -1,0 +1,5 @@
+docker run --rm --user "$(id -u):$(id -g)" -v $(pwd):/usr/src -w /usr/src -ti ruby:2.5.1 bash
+gem install rails 5.2
+rails new OneBitExchange --database=postgresql --skip-bundle
+exit
+cd OneBitExchange
